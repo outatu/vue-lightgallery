@@ -1,5 +1,5 @@
 # vue-lightgallery
-基于vue开发的0依赖的lightgallery组件
+基于vue开发的零依赖的lightgallery组件
 
 ## Project setup
 ```
