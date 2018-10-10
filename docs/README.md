@@ -1,27 +1,24 @@
-# vue-lightgallery
-基于vue开发的零依赖的lightgallery组件
+---
+home: true
+actionText: Get Started →
+actionLink: /guide/
+features:
+  - title: 零依赖
+    details: 没有任何第三方依赖。
+  - title: 优雅的API
+    details: 遵循Vue API设计开发，无副作用。
+footer: MIT License | Copyright (c) 2018 nashaofu
+---
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
+## 起步
+安装：
+``` bash
+npm install vue-lightgallery --save
 ```
 
-### Lints and fixes files
-```
-npm run lint
+全局安装:
+```js
+import Vue from 'vue'
+import VueLightgallery from 'vue-lightgallery'
+Vue.use(VueLightgallery)
 ```
