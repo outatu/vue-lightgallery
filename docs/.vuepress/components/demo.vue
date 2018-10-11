@@ -1,9 +1,10 @@
 <template lang="pug">
-div
-  p 你好
+.demo
   vue-lightgallery(:items="items")
-    template
-      div img
+  vue-lightgallery(:items="items")
+    template(slot-scope="{ index, item }")
+      img(:src="item")
+      div {{ index, item }}
 </template>
 
 <script>
@@ -15,7 +16,6 @@ import image5 from '../images/5.jpg'
 import image6 from '../images/6.jpg'
 import image7 from '../images/7.jpg'
 import image8 from '../images/8.jpg'
-
 
 export default {
   name: 'demo',
@@ -35,3 +35,20 @@ export default {
   }
 }
 </script>
+
+<style lang="less">
+.demo {
+  .vue-lightgallery {
+    display: flex;
+    flex-wrap: wrap;
+    &-item {
+      width: 25%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+</style>
+

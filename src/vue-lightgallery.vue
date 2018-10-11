@@ -1,13 +1,19 @@
 <template lang="pug">
 .vue-lightgallery
-  component(
+  a.vue-lightgallery-item(
     v-for="(item, index) in thumbnails"
     :key="index"
-    :is="tag"
     :href="item"
     :title="item"
+    @click.prevent="click(index)"
   )
-    img(:src="item" :alt="item")
+    slot(
+      :index="index"
+      :item="items[index]"
+      :source="sources[index]"
+      :thumbnail="thumbnails[index]"
+    )
+      img(:src="item" :alt="item")
 </template>
 
 <script>
@@ -17,10 +23,6 @@ export default {
     items: {
       type: Array,
       default: () => []
-    },
-    tag: {
-      type: String,
-      default: 'a'
     }
   },
   computed: {
@@ -36,11 +38,14 @@ export default {
         return item
       })
     }
+  },
+  mounted () {
+    this.el = document.createElement('div')
+  },
+  methods: {
+    click (index) {
+      console.log(index)
+    }
   }
 }
 </script>
-
-<style lang="less">
-.vue-lightgallery {
-}
-</style>

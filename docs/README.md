@@ -10,15 +10,26 @@ features:
 footer: MIT License | Copyright (c) 2018 nashaofu
 ---
 
-## 起步
-安装：
+## 安装
 ``` bash
 npm install vue-lightgallery --save
 ```
 
-全局安装:
+## 用法
+全局安装：
 ```js
 import Vue from 'vue'
 import VueLightgallery from 'vue-lightgallery'
 Vue.use(VueLightgallery)
+```
+
+局部安装：
+```js
+import VueLightgallery from 'vue-lightgallery'
+export default {
+  name: 'demo',
+  components: {
+    VueLightgallery
+  }
+}
 ```
