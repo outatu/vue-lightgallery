@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'lightgallery-icons';
+  src: url('lightgallery-icons.eot'); /* IE9*/
+  src: url('lightgallery-icons.eot#iefix') format('embedded-opentype'), url('lightgallery-icons.woff') format('woff'),
+    url('lightgallery-icons.ttf') format('truetype'), url('lightgallery-icons.svg#lg') format('svg');
+}
+
+[class^='vue-lightgallery-icon-'],
+[class*=' vue-lightgallery-icon-'] {
+  font-family: 'lightgallery-icons' !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.vue-lightgallery-icon-arrow-back:before {
+  content: '\e600';
+}
+
+.vue-lightgallery-icon-close:before {
+  content: '\e601';
+}
+
+.vue-lightgallery-icon-view-module:before {
+  content: '\e602';
+}
+
+.vue-lightgallery-icon-arrow-forward:before {
+  content: '\e603';
+}
+
+.vue-lightgallery-icon-download:before {
+  content: '\e604';
+}
+
+.vue-lightgallery-icon-share:before {
+  content: '\e605';
+}
+
+.vue-lightgallery-icon-zoom-out:before {
+  content: '\e606';
+}
+
+.vue-lightgallery-icon-fullscreen:before {
+  content: '\e607';
+}
+
+.vue-lightgallery-icon-fullscreen-exit:before {
+  content: '\e608';
+}
+
+.vue-lightgallery-icon-zoom-in:before {
+  content: '\e609';
+}
